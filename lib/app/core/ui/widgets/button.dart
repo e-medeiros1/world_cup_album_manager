@@ -37,18 +37,18 @@ class Button extends StatelessWidget {
         Text(label, style: labelStyle, overflow: TextOverflow.ellipsis);
 
     return SizedBox(
-      height: height,
       width: widht,
+      height: height,
       child: outline
           ? OutlinedButton(
               onPressed: onPressed,
               style: buttonStyle,
-              child: Text(label),
+              child: labelText,
             )
           : ElevatedButton(
               onPressed: onPressed,
               style: buttonStyle,
-              child: Text(label),
+              child: labelText,
             ),
     );
   }

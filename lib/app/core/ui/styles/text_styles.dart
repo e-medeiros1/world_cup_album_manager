@@ -36,6 +36,8 @@ class TextStyles {
       TextStyle(fontWeight: FontWeight.bold, fontFamily: secondaryFont);
   TextStyle get textSecondaryFontExtraBold =>
       TextStyle(fontWeight: FontWeight.w800, fontFamily: secondaryFont);
+  TextStyle get textSecondaryFontExtraBoldPrimaryColor =>
+      textSecondaryFontExtraBold.copyWith(color: ColorsApp.instance.primary);
 
   TextStyle get labelTextField =>
       textSecondaryFontRegular.copyWith(color: ColorsApp.instance.greyDark);
