@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:world_cup_album_manager/app/core/theme/theme_config.dart';
+import 'package:world_cup_album_manager/app/core/ui/theme/theme_config.dart';
 import 'package:world_cup_album_manager/app/pages/splash/splash_page.dart';
 
 class FwcAlbumApp extends StatelessWidget {

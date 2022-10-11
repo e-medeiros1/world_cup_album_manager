@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:world_cup_album_manager/app/core/styles/colors_app.dart';
-import 'package:world_cup_album_manager/app/core/styles/text_styles.dart';
+import 'package:world_cup_album_manager/app/core/ui/styles/colors_app.dart';
+import 'package:world_cup_album_manager/app/core/ui/styles/text_styles.dart';
 
 class ThemeConfig {
   ThemeConfig._();

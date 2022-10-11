@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:world_cup_album_manager/app/core/styles/colors_app.dart';
+import 'package:world_cup_album_manager/app/core/ui/styles/colors_app.dart';
 
 class TextStyles {
   static TextStyles? _instance;
