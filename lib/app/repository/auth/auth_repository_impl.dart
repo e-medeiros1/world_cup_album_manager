@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:dio/dio.dart';
 import 'package:world_cup_album_manager/app/core/exceptions/repository_exception.dart';
 import 'package:world_cup_album_manager/app/core/rest/custom_dio.dart';
-import 'package:world_cup_album_manager/app/models/registar_user_model.dart';
+import 'package:world_cup_album_manager/app/models/register_user_model.dart';
 
 import './auth_repository.dart';
 
@@ -23,7 +23,7 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
-  Future<void> register(RegistarUserModel registerModel) async {
+  Future<void> register(RegisterUserModel registerModel) async {
     try {
       await dio.unAuth().post('/api/register', data: registerModel.toMap());
     } on DioError catch (e, s) {

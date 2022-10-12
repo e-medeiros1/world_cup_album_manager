@@ -40,6 +40,7 @@ dependencies:
   flutter_getit: ^1.2.1
   flutter_dotenv: ^5.0.2
   dio: ^4.0.6
+  validatorless: ^1.2.3
 
 dev_dependencies:
   flutter_test:

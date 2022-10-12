@@ -1,13 +1,13 @@
 import 'dart:convert';
 
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-class RegistarUserModel {
+class RegisterUserModel {
   final String name;
   final String email;
   final String password;
   final String passwordConfirmation;
   
-  RegistarUserModel({
+  RegisterUserModel({
     required this.name,
     required this.email,
     required this.password,
@@ -25,8 +25,8 @@ class RegistarUserModel {
     };
   }
 
-  factory RegistarUserModel.fromMap(Map<String, dynamic> map) {
-    return RegistarUserModel(
+  factory RegisterUserModel.fromMap(Map<String, dynamic> map) {
+    return RegisterUserModel(
       name: map['name'] as String,
       email: map['email'] as String,
       password: map['password'] as String,
@@ -36,5 +36,5 @@ class RegistarUserModel {
 
   String toJson() => json.encode(toMap());
 
-  factory RegistarUserModel.fromJson(String source) => RegistarUserModel.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory RegisterUserModel.fromJson(String source) => RegisterUserModel.fromMap(json.decode(source) as Map<String, dynamic>);
 }
