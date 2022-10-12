@@ -8,6 +8,7 @@ import 'package:world_cup_album_manager/app/core/ui/widgets/button.dart';
 import 'package:world_cup_album_manager/app/pages/splash/presenter/splash_presenter.dart';
 import 'package:world_cup_album_manager/app/pages/splash/view/splash_view_impl.dart';
 
+// ignore: must_be_immutable
 class SplashPage extends StatefulWidget {
   SplashPresenter presenter;
   SplashPage({super.key, required this.presenter});
