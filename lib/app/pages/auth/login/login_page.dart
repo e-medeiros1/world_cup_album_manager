@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:world_cup_album_manager/app/core/ui/styles/button_styles.dart';
 import 'package:world_cup_album_manager/app/core/ui/styles/colors_app.dart';
@@ -68,9 +69,13 @@ class _LoginPageState extends State<LoginPage> {
                         text: 'Não possui uma conta? ',
                         children: [
                           TextSpan(
-                              text: 'Cadastre-se',
-                              style: context.textStyles.textSecondaryFontMedium
-                                  .copyWith(color: context.colors.secondary))
+                            text: 'Cadastre-se',
+                            style: context.textStyles.textSecondaryFontMedium
+                                .copyWith(color: context.colors.secondary),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () => Navigator.of(context)
+                                  .pushNamed('/auth/register'),
+                          ),
                         ],
                       ),
                       style: context.textStyles.textSecondaryFontMedium

@@ -3,6 +3,7 @@ import 'package:flutter_getit/flutter_getit.dart';
 import 'package:world_cup_album_manager/app/core/rest/custom_dio.dart';
 import 'package:world_cup_album_manager/app/core/ui/theme/theme_config.dart';
 import 'package:world_cup_album_manager/app/pages/auth/login/login_page.dart';
+import 'package:world_cup_album_manager/app/pages/auth/register/register_page.dart';
 import 'package:world_cup_album_manager/app/pages/home/home_page.dart';
 import 'package:world_cup_album_manager/app/pages/splash/view/splash_route.dart';
 import 'package:world_cup_album_manager/app/repository/auth/auth_repository.dart';
@@ -24,6 +25,7 @@ class FwcAlbumApp extends StatelessWidget {
         routes: {
           '/': (_) => const SplashRoute(),
           '/auth/login': (_) => const LoginPage(),
+          '/auth/register': (_) => const RegisterPage(),
           '/home': (_) => const HomePage(),
         },
       ),
