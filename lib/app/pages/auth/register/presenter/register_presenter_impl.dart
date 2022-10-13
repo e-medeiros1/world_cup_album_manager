@@ -1,10 +1,10 @@
 import 'dart:developer';
 
 import 'package:world_cup_album_manager/app/models/register_user_model.dart';
+import 'package:world_cup_album_manager/app/pages/auth/register/presenter/register_presenter.dart';
 import 'package:world_cup_album_manager/app/pages/auth/register/view/register_view.dart';
 import 'package:world_cup_album_manager/app/repository/auth/auth_repository.dart';
 
-import './register_presenter.dart';
 
 class RegisterPresenterImpl implements RegisterPresenter {
   final AuthRepository authRepository;
