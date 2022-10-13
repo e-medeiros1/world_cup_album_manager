@@ -20,8 +20,21 @@
 </p>
 
 
+<h2> Dia 2 </h2>
+<p >
+  <h4>Resumo:</h4>
+  Cria e implementa Register e login page com o mvp, auth Repository e persitência de dados</br>  
+ 
 </p>  
 
+<h2> Resultado </h2>  
+
+<p>
+      <img src="https://user-images.githubusercontent.com/73318684/195488398-f82bfe84-3566-4893-bd74-910358b75e80.png" width="250" alt="Resultado"/>
+</p>
+<p>
+      <img src="https://user-images.githubusercontent.com/73318684/195488489-45e20b8f-bfc0-4b19-bd7c-c399c18854b6.png" width="250" alt="Resultado"/>
+</p>
 
 
 
