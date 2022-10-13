@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.erimedeiros.world_cup_album_manager">
    <application
-        android:label="world_cup_album_manager"
+        android:label="World CUP 2022 Album"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
