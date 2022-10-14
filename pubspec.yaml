@@ -42,6 +42,7 @@ dependencies:
   dio: ^4.0.6
   validatorless: ^1.2.3
   shared_preferences: ^2.0.15
+  flutter_awesome_select: ^6.5.0
 
 dev_dependencies:
   flutter_test:
