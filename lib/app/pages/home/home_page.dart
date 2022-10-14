@@ -55,20 +55,21 @@ class _HomePageState extends HomeViewImpl {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    const StickerPercent(percentual: 65),
+                    StickerPercent(percentual: user?.totalCompletePercent ?? 0),
                     const SizedBox(height: 20),
-                    Text('45 figurinhas', style: context.textStyles.titleWhite),
+                    Text('${user?.totalStickers ?? 0} figurinhas',
+                        style: context.textStyles.titleWhite),
                     const SizedBox(height: 20),
                     StatusTile(
                       label: 'Todas',
                       icon: Image.asset('assets/images/all_icon.png'),
-                      value: 34,
+                      value: user?.totalAlbum ?? 0,
                     ),
                     const SizedBox(height: 20),
                     StatusTile(
                       label: 'Faltando',
                       icon: Image.asset('assets/images/missing_icon.png'),
-                      value: 500,
+                      value: user?.totalComplete ?? 0,
                     ),
                     const SizedBox(height: 20),
                     StatusTile(
@@ -78,7 +79,9 @@ class _HomePageState extends HomeViewImpl {
                     ),
                     const SizedBox(height: 20),
                     Button(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/my_stickers');
+                        },
                         widht: MediaQuery.of(context).size.width * .9,
                         buttonStyle: context.buttonStyles.yellowOutlineButton,
                         labelStyle: context
