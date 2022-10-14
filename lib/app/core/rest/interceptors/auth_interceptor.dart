@@ -5,14 +5,12 @@ import 'package:world_cup_album_manager/app/core/ui/global/global_context.dart';
 
 class AuthInterceptor extends Interceptor {
   @override
-  Future<void> onRequest(
-      RequestOptions options, RequestInterceptorHandler handler) async {
+  Future<void> onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
     final sp = await SharedPreferences.getInstance();
     final accessToken = sp.getString('accessToken');
     options.headers['Authorization'] = 'Bearer $accessToken';
 
     handler.next(options);
-    super.onRequest(options, handler);
   }
 
   @override
@@ -22,7 +20,6 @@ class AuthInterceptor extends Interceptor {
     } else {
       handler.next(err);
     }
-    //Descomentei kkk
-    super.onError(err, handler);
+    
   }
 }
