@@ -8,6 +8,7 @@ import 'package:world_cup_album_manager/app/pages/auth/login/view/login_route.da
 import 'package:world_cup_album_manager/app/pages/auth/register/view/register_route.dart';
 import 'package:world_cup_album_manager/app/pages/home/view/home_route.dart';
 import 'package:world_cup_album_manager/app/pages/my_stickers/my_stickers_page.dart';
+import 'package:world_cup_album_manager/app/pages/my_stickers/view/my_stickers_route.dart';
 import 'package:world_cup_album_manager/app/pages/splash/view/splash_route.dart';
 import 'package:world_cup_album_manager/app/repository/auth/auth_repository.dart';
 import 'package:world_cup_album_manager/app/repository/auth/auth_repository_impl.dart';
@@ -36,7 +37,7 @@ class FwcAlbumApp extends StatelessWidget {
           '/auth/login': (_) => const LoginRoute(),
           '/auth/register': (_) => const RegisterRoute(),
           '/home': (_) => const HomeRoute(),
-          '/my_stickers': (_) => const MyStickersPage()
+          '/my_stickers': (_) => const MyStickersRoute()
         },
       ),
     );
