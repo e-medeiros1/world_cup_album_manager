@@ -17,7 +17,7 @@ mixin Loader<T extends StatefulWidget> on State<T> {
   hideLoader() {
     if (isOpen) {
       isOpen = false;
+      Navigator.of(context).pop();
     }
-    Navigator.of(context).pop();
   }
 }
