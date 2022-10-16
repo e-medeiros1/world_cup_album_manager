@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getit/flutter_getit.dart';
 import 'package:world_cup_album_manager/app/core/ui/styles/colors_app.dart';
 import 'package:world_cup_album_manager/app/core/ui/styles/text_styles.dart';
 import 'package:world_cup_album_manager/app/models/groups_stickers.dart';
 import 'package:world_cup_album_manager/app/models/user_sticker_model.dart';
+import 'package:world_cup_album_manager/app/pages/my_stickers/presenter/my_stickers_presenter.dart';
 
 class StickerGroup extends StatelessWidget {
   final GroupsStickers group;
@@ -100,8 +102,16 @@ class Sticker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        Navigator.of(context).pushNamed('/sticker_detail');
+      onTap: () async {
+        final presenter = context.get<MyStickersPresenter>();
+        await Navigator.of(context).pushNamed('/sticker_detail', arguments: {
+          'countryCode': countryCode,
+          'stickerNumber': stickerNumber,
+          'countryName': countryName,
+          'stickerUser': sticker,
+        });
+
+        presenter.refresh();
       },
       child: Container(
         color: sticker != null ? context.colors.primary : context.colors.grey,
@@ -115,7 +125,7 @@ class Sticker extends StatelessWidget {
               alignment: Alignment.topRight,
               padding: const EdgeInsets.all(2),
               child: Text(
-                '${sticker?.duplicate ?? ''}',
+                sticker?.duplicate.toString() ?? '',
                 style: context.textStyles.textSecondaryFontMedium.copyWith(
                   color: context.colors.secondary,
                 ),

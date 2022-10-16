@@ -7,7 +7,6 @@ import 'package:world_cup_album_manager/app/core/ui/theme/theme_config.dart';
 import 'package:world_cup_album_manager/app/pages/auth/login/view/login_route.dart';
 import 'package:world_cup_album_manager/app/pages/auth/register/view/register_route.dart';
 import 'package:world_cup_album_manager/app/pages/home/view/home_route.dart';
-import 'package:world_cup_album_manager/app/pages/my_stickers/my_stickers_page.dart';
 import 'package:world_cup_album_manager/app/pages/my_stickers/view/my_stickers_route.dart';
 import 'package:world_cup_album_manager/app/pages/splash/view/splash_route.dart';
 import 'package:world_cup_album_manager/app/pages/sticker_detail/view/sticker_detail_route.dart';
