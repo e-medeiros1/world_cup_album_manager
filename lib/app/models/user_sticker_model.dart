@@ -22,7 +22,7 @@ class UserStickerModel {
       'id': id,
       'id_user': idUser,
       'id_sticker': idSticker,
-      'duplicate': duplicate,
+      'duplicate_stickers': duplicate,
       'sticker_code': stickerCode,
       'sticker_number': stickerNumber,
     };
@@ -30,12 +30,12 @@ class UserStickerModel {
 
   factory UserStickerModel.fromMap(Map<String, dynamic> map) {
     return UserStickerModel(
-      id: map['id'] as int,
-      idUser: map['id_user'] as int,
-      idSticker: map['id_sticker'] as int,
-      duplicate: map['duplicate'] as int,
-      stickerCode: map['sticker_code'] as String,
-      stickerNumber: map['sticker_number'] as String,
+      id: map['id'] ?? 0,
+      idUser: map['id_user'] ?? 0,
+      idSticker: map['id_sticker'] ?? 0,
+      duplicate: map['duplicate_stickers'] ?? 0,
+      stickerCode: map['sticker_code'] ?? '',
+      stickerNumber: map['sticker_number'] ?? '',
     );
   }
 
