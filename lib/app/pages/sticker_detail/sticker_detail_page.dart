@@ -32,7 +32,6 @@ class _StickerDetailPageState extends StickerDetailViewImpl {
       body: SingleChildScrollView(
         child: SizedBox(
           width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height * .8,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -40,9 +39,6 @@ class _StickerDetailPageState extends StickerDetailViewImpl {
               Image.asset(hasSticker
                   ? 'assets/images/sticker.png'
                   : 'assets/images/sticker_pb.png'),
-              const SizedBox(
-                height: 20,
-              ),
               Row(
                 children: [
                   Padding(
