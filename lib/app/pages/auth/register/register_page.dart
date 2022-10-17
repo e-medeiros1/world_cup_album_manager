@@ -43,7 +43,7 @@ class _RegisterPageState extends RegisterViewImpl {
               children: [
                 const SizedBox(height: 20),
                 Container(
-                  height: 106.82,
+                  height: 136.82,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage('assets/images/bola.png'),

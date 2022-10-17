@@ -32,12 +32,17 @@ class _StickerDetailPageState extends StickerDetailViewImpl {
       body: SingleChildScrollView(
         child: SizedBox(
           width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height * .8,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(hasSticker
                   ? 'assets/images/sticker.png'
                   : 'assets/images/sticker_pb.png'),
+              const SizedBox(
+                height: 20,
+              ),
               Row(
                 children: [
                   Padding(
@@ -72,6 +77,9 @@ class _StickerDetailPageState extends StickerDetailViewImpl {
                 alignment: Alignment.centerLeft,
                 child: Text(countryName,
                     style: context.textStyles.textPrimaryFontRegular),
+              ),
+              const SizedBox(
+                height: 20,
               ),
               Button.primary(
                 widht: MediaQuery.of(context).size.width * .9,
